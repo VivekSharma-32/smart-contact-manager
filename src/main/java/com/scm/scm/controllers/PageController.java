@@ -16,4 +16,17 @@ public class PageController {
         model.addAttribute("youtubechannel", "Smart contact manager");
         return "home";
     }
+
+    @RequestMapping("/about")
+    public String aboutPage() {
+        System.out.println("About page Loading");
+        return "about";
+    }
+
+    // Services route
+    @RequestMapping("/services")
+    public String servicesPage() {
+        System.out.println("Services page Loading");
+        return "services";
+    }
 }
